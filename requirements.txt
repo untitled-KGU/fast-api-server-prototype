@@ -1,2 +1,18 @@
+# Utils
+python-dotenv
+
+# Web Framework
 fastapi
 uvicorn[standard]
+python-multipart
+
+# AI Models & Computer Vision
+ultralytics
+opencv-python-headless
+
+# For Material Classification (OpenCLIP)
+open-clip-torch
+
+# Deep Learning Framework
+torch
+torchvision
