@@ -1,0 +1,13 @@
+services:
+  fast-api-prototype:
+    build: .
+    container_name: fast-api-prototype
+    ports:
+      - 8989:8000
+    volumes:
+      - ${HOST_OUTPUTS_DIR}:/fast-api-prototype/outputs
+      - ${HOST_INPUTS_DIR}:/fast-api-prototype/inputs
+    environment:
+      - CROP_IMAGE_DIR=/fast-api-prototype/outputs
+      - ORIGIN_IMAGE_DIR=/fast-api-prototype/inputs
+    restart: always
