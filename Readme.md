@@ -31,13 +31,13 @@ FYI. `docker-compose.yml`을 보면 알겠지만 8989 포트로 요쳥 시 파�
         "count": 2,
         "detected_items": [
             {
-                "label": "bottle",
-                "material": "glass",
+                "label": "Bottle",
+                "detail": "유리병류",
                 "confidence": {
-                    "object": 0.98,
-                    "material": 0.92
+                    "object": 0.813,
+                    "detail": 0.953
                 },
-                "filename": "crop_001.jpg"
+                "filename": "081c60be.jpg"
             },
             ...
         ]
