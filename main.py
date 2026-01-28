@@ -30,11 +30,11 @@ async def extract_and_crop(data: ExtractRequest):
             filename = image_storage.save_crop(crop, request_id)
 
             detected_items.append({
-                "label": obj_name,
-                "detail": material,
+                "category": material,
+                "subcategory": obj_name,
                 "confidence": {
                     "object": round(float(box.conf[0]), 3),
-                    "detail": round(prob, 3)
+                    "category": round(prob, 3)
                 },
                 "filename": filename
             })
